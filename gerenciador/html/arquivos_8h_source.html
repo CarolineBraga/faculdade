@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Gerenciador de arquivos: Código-Fonte de caroline-braga-src/arquivos.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Gerenciador de arquivos
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Protótipo de um sistema gerenciador de arquivos</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_6218a19289d23667c3047cc9d24f16e3.html">caroline-braga-src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">arquivos.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="arquivos_8h.html">Vá para a documentação deste arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef ARQUIVOS_H_INCLUDED</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define ARQUIVOS_H_INCLUDED</span></div><div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="arquivos_8h.html#a6049ec9d9f6fb6c4e938a42cdbfc5028">   10</a></span>&#160;<span class="preprocessor">#define TAM_BLOCO 200 </span></div><div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="arquivos_8h.html#abb75a171a7455ec2681e670b0af761f5">   11</a></span>&#160;<span class="preprocessor">#define TAM_MEMORIA 100 </span></div><div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="struct_node.html">   16</a></span>&#160;<span class="preprocessor">typedef struct Node {</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="struct_node.html#a26c766b01e1c3bd2bd403868764be673">   18</a></span>&#160;    <span class="keywordtype">char</span> texto[<a class="code" href="arquivos_8h.html#a6049ec9d9f6fb6c4e938a42cdbfc5028">TAM_BLOCO</a>]; </div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;} <a class="code" href="arquivos_8h.html#a682f531e759e6edca2fba6c56a0b6298">node</a>;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="arquivos_8h.html#a28ffca547148c9f380d4550b3065df5f">   22</a></span>&#160;<a class="code" href="struct_node.html">node</a> <a class="code" href="arquivos_8h.html#a28ffca547148c9f380d4550b3065df5f">memoria</a>[<a class="code" href="arquivos_8h.html#abb75a171a7455ec2681e670b0af761f5">TAM_MEMORIA</a>]; </div><div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="arquivos_8h.html#a1910d262855b71da353ed0d07a6c7823">   24</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="arquivos_8h.html#a1910d262855b71da353ed0d07a6c7823">pos</a>; </div><div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="arquivos_8h.html#ad41d96451b5f59af9ae86616651a2a35">   25</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="arquivos_8h.html#ad41d96451b5f59af9ae86616651a2a35">total_blocos</a>; </div><div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="struct_cadastro.html">   30</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_cadastro.html">Cadastro</a> {</div><div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="struct_cadastro.html#a8d97d4d0bac76526f3e891d721a24acb">   32</a></span>&#160;    <span class="keywordtype">char</span> <a class="code" href="struct_cadastro.html#a8d97d4d0bac76526f3e891d721a24acb">nome</a>[200]; </div><div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="struct_cadastro.html#a73f53b0349bb995757a60c9c0bde3569">   33</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_cadastro.html#a73f53b0349bb995757a60c9c0bde3569">inicio</a>; </div><div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="struct_cadastro.html#ac7da9ee446f4ece4a32d8637c39f8540">   34</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_cadastro.html#ac7da9ee446f4ece4a32d8637c39f8540">qtd_blocos</a>; </div><div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="struct_cadastro.html#a81eebf2d7b240e5f16d1470c97497e31">   35</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_cadastro.html#a81eebf2d7b240e5f16d1470c97497e31">posicoes</a>[100]; </div><div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="struct_cadastro.html#ae6c605f0095a943225686cb1fb0a4327">   36</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_cadastro.html">Cadastro</a> * <a class="code" href="struct_cadastro.html#ae6c605f0095a943225686cb1fb0a4327">prox</a>; </div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;} <a class="code" href="arquivos_8h.html#ace47a6b2beaedfc61184d6dd50dfc3c3">cadastro</a>;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="arquivos_8h.html#ae32b8bf13581143178244182276af84e">   40</a></span>&#160;FILE* <a class="code" href="arquivos_8h.html#ae32b8bf13581143178244182276af84e">arq</a>; </div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keywordtype">int</span> <a class="code" href="arquivos_8h.html#a11b30daec1bec6a2bcf57b938a6c9180">cadastrar</a> (<a class="code" href="struct_cadastro.html">cadastro</a> ** cabeca2, <span class="keywordtype">char</span> * nome_arq);</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keywordtype">void</span> <a class="code" href="arquivos_8h.html#a1cc40f803f933b5637fe71181d1af359">descadrastrar</a> (<span class="keywordtype">char</span> nome_arq[], <a class="code" href="struct_cadastro.html">cadastro</a> ** cabeca3);</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keywordtype">int</span> <a class="code" href="arquivos_8h.html#a58ba0c65f51c87da406028c490743526">busca</a> (<a class="code" href="struct_cadastro.html">cadastro</a> * cabeca4, <span class="keywordtype">char</span> * arquivo, <span class="keywordtype">int</span> flag);</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keywordtype">void</span> <a class="code" href="arquivos_8h.html#aaab32f37f47fc32e7a10613f20d1a24f">inserir</a> (<span class="keywordtype">char</span> * bloco);</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keywordtype">void</span> <a class="code" href="arquivos_8h.html#a8d0b2fbc27870692c4aea04506e755fe">remover</a> (<a class="code" href="struct_cadastro.html">cadastro</a> * cabeca5, <span class="keywordtype">char</span> * arquivo);</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keywordtype">int</span> <a class="code" href="arquivos_8h.html#afb7beca1919a43711a0331e876ac21aa">contador_ocorrencias</a> (<span class="keywordtype">char</span> * bloco, <span class="keywordtype">char</span> * termo);</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keywordtype">int</span> <a class="code" href="arquivos_8h.html#aee69b388c6c89526e31c4c359c972e0a">ocorrencias_tratadas</a> (<span class="keywordtype">char</span> * bloco1, <span class="keywordtype">char</span> * bloco2, <span class="keywordtype">char</span> * termo);</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keywordtype">int</span> <a class="code" href="arquivos_8h.html#aef603d70e0d90fe5e64ebf9c3978373b">ocorrencias_arquivo</a> (<a class="code" href="struct_cadastro.html">cadastro</a> * cabeca, <span class="keywordtype">char</span> * termo, <span class="keywordtype">char</span> * nome_arq);</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keywordtype">int</span> <a class="code" href="arquivos_8h.html#aaa30ae9dd20b5dec6df6db8b06283849">menu</a> (<a class="code" href="struct_cadastro.html">cadastro</a> * cad_cabeca);</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="arquivos_8h_html_ace47a6b2beaedfc61184d6dd50dfc3c3"><div class="ttname"><a href="arquivos_8h.html#ace47a6b2beaedfc61184d6dd50dfc3c3">cadastro</a></div><div class="ttdeci">struct Cadastro cadastro</div></div>
+<div class="ttc" id="arquivos_8h_html_aef603d70e0d90fe5e64ebf9c3978373b"><div class="ttname"><a href="arquivos_8h.html#aef603d70e0d90fe5e64ebf9c3978373b">ocorrencias_arquivo</a></div><div class="ttdeci">int ocorrencias_arquivo(cadastro *cabeca, char *termo, char *nome_arq)</div><div class="ttdef"><b>Definition:</b> arquivos.c:145</div></div>
+<div class="ttc" id="arquivos_8h_html_aaa30ae9dd20b5dec6df6db8b06283849"><div class="ttname"><a href="arquivos_8h.html#aaa30ae9dd20b5dec6df6db8b06283849">menu</a></div><div class="ttdeci">int menu(cadastro *cad_cabeca)</div><div class="ttdef"><b>Definition:</b> arquivos.c:155</div></div>
+<div class="ttc" id="arquivos_8h_html_a1cc40f803f933b5637fe71181d1af359"><div class="ttname"><a href="arquivos_8h.html#a1cc40f803f933b5637fe71181d1af359">descadrastrar</a></div><div class="ttdeci">void descadrastrar(char nome_arq[], cadastro **cabeca3)</div><div class="ttdef"><b>Definition:</b> arquivos.c:6</div></div>
+<div class="ttc" id="arquivos_8h_html_ad41d96451b5f59af9ae86616651a2a35"><div class="ttname"><a href="arquivos_8h.html#ad41d96451b5f59af9ae86616651a2a35">total_blocos</a></div><div class="ttdeci">int total_blocos</div><div class="ttdef"><b>Definition:</b> arquivos.h:25</div></div>
+<div class="ttc" id="arquivos_8h_html_aee69b388c6c89526e31c4c359c972e0a"><div class="ttname"><a href="arquivos_8h.html#aee69b388c6c89526e31c4c359c972e0a">ocorrencias_tratadas</a></div><div class="ttdeci">int ocorrencias_tratadas(char *bloco1, char *bloco2, char *termo)</div><div class="ttdef"><b>Definition:</b> arquivos.c:126</div></div>
+<div class="ttc" id="arquivos_8h_html_a11b30daec1bec6a2bcf57b938a6c9180"><div class="ttname"><a href="arquivos_8h.html#a11b30daec1bec6a2bcf57b938a6c9180">cadastrar</a></div><div class="ttdeci">int cadastrar(cadastro **cabeca2, char *nome_arq)</div><div class="ttdef"><b>Definition:</b> arquivos.c:68</div></div>
+<div class="ttc" id="arquivos_8h_html_a28ffca547148c9f380d4550b3065df5f"><div class="ttname"><a href="arquivos_8h.html#a28ffca547148c9f380d4550b3065df5f">memoria</a></div><div class="ttdeci">node memoria[TAM_MEMORIA]</div><div class="ttdef"><b>Definition:</b> arquivos.h:22</div></div>
+<div class="ttc" id="struct_cadastro_html_a8d97d4d0bac76526f3e891d721a24acb"><div class="ttname"><a href="struct_cadastro.html#a8d97d4d0bac76526f3e891d721a24acb">Cadastro::nome</a></div><div class="ttdeci">char nome[200]</div><div class="ttdef"><b>Definition:</b> arquivos.h:32</div></div>
+<div class="ttc" id="arquivos_8h_html_a1910d262855b71da353ed0d07a6c7823"><div class="ttname"><a href="arquivos_8h.html#a1910d262855b71da353ed0d07a6c7823">pos</a></div><div class="ttdeci">int pos</div><div class="ttdef"><b>Definition:</b> arquivos.h:24</div></div>
+<div class="ttc" id="arquivos_8h_html_a8d0b2fbc27870692c4aea04506e755fe"><div class="ttname"><a href="arquivos_8h.html#a8d0b2fbc27870692c4aea04506e755fe">remover</a></div><div class="ttdeci">void remover(cadastro *cabeca5, char *arquivo)</div><div class="ttdef"><b>Definition:</b> arquivos.c:60</div></div>
+<div class="ttc" id="struct_cadastro_html_ac7da9ee446f4ece4a32d8637c39f8540"><div class="ttname"><a href="struct_cadastro.html#ac7da9ee446f4ece4a32d8637c39f8540">Cadastro::qtd_blocos</a></div><div class="ttdeci">int qtd_blocos</div><div class="ttdef"><b>Definition:</b> arquivos.h:34</div></div>
+<div class="ttc" id="arquivos_8h_html_aaab32f37f47fc32e7a10613f20d1a24f"><div class="ttname"><a href="arquivos_8h.html#aaab32f37f47fc32e7a10613f20d1a24f">inserir</a></div><div class="ttdeci">void inserir(char *bloco)</div><div class="ttdef"><b>Definition:</b> arquivos.c:53</div></div>
+<div class="ttc" id="struct_cadastro_html"><div class="ttname"><a href="struct_cadastro.html">Cadastro</a></div><div class="ttdef"><b>Definition:</b> arquivos.h:30</div></div>
+<div class="ttc" id="arquivos_8h_html_afb7beca1919a43711a0331e876ac21aa"><div class="ttname"><a href="arquivos_8h.html#afb7beca1919a43711a0331e876ac21aa">contador_ocorrencias</a></div><div class="ttdeci">int contador_ocorrencias(char *bloco, char *termo)</div><div class="ttdef"><b>Definition:</b> arquivos.c:109</div></div>
+<div class="ttc" id="arquivos_8h_html_a58ba0c65f51c87da406028c490743526"><div class="ttname"><a href="arquivos_8h.html#a58ba0c65f51c87da406028c490743526">busca</a></div><div class="ttdeci">int busca(cadastro *cabeca4, char *arquivo, int flag)</div><div class="ttdef"><b>Definition:</b> arquivos.c:32</div></div>
+<div class="ttc" id="arquivos_8h_html_ae32b8bf13581143178244182276af84e"><div class="ttname"><a href="arquivos_8h.html#ae32b8bf13581143178244182276af84e">arq</a></div><div class="ttdeci">FILE * arq</div><div class="ttdef"><b>Definition:</b> arquivos.h:40</div></div>
+<div class="ttc" id="arquivos_8h_html_a682f531e759e6edca2fba6c56a0b6298"><div class="ttname"><a href="arquivos_8h.html#a682f531e759e6edca2fba6c56a0b6298">node</a></div><div class="ttdeci">struct Node node</div></div>
+<div class="ttc" id="arquivos_8h_html_abb75a171a7455ec2681e670b0af761f5"><div class="ttname"><a href="arquivos_8h.html#abb75a171a7455ec2681e670b0af761f5">TAM_MEMORIA</a></div><div class="ttdeci">#define TAM_MEMORIA</div><div class="ttdef"><b>Definition:</b> arquivos.h:11</div></div>
+<div class="ttc" id="struct_cadastro_html_a73f53b0349bb995757a60c9c0bde3569"><div class="ttname"><a href="struct_cadastro.html#a73f53b0349bb995757a60c9c0bde3569">Cadastro::inicio</a></div><div class="ttdeci">int inicio</div><div class="ttdef"><b>Definition:</b> arquivos.h:33</div></div>
+<div class="ttc" id="struct_node_html"><div class="ttname"><a href="struct_node.html">Node</a></div><div class="ttdef"><b>Definition:</b> arquivos.h:16</div></div>
+<div class="ttc" id="struct_cadastro_html_ae6c605f0095a943225686cb1fb0a4327"><div class="ttname"><a href="struct_cadastro.html#ae6c605f0095a943225686cb1fb0a4327">Cadastro::prox</a></div><div class="ttdeci">struct Cadastro * prox</div><div class="ttdef"><b>Definition:</b> arquivos.h:36</div></div>
+<div class="ttc" id="struct_cadastro_html_a81eebf2d7b240e5f16d1470c97497e31"><div class="ttname"><a href="struct_cadastro.html#a81eebf2d7b240e5f16d1470c97497e31">Cadastro::posicoes</a></div><div class="ttdeci">int posicoes[100]</div><div class="ttdef"><b>Definition:</b> arquivos.h:35</div></div>
+<div class="ttc" id="arquivos_8h_html_a6049ec9d9f6fb6c4e938a42cdbfc5028"><div class="ttname"><a href="arquivos_8h.html#a6049ec9d9f6fb6c4e938a42cdbfc5028">TAM_BLOCO</a></div><div class="ttdeci">#define TAM_BLOCO</div><div class="ttdef"><b>Definition:</b> arquivos.h:10</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>
