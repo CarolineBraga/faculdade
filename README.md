@@ -1,0 +1,1 @@
+Repositório criado para armazenar códigos em linguagem C, desenvolvidos como trabalhos de faculdade.
